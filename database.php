@@ -1,10 +1,14 @@
-<?php 
+<?php
 
 
 
 
-$dbname = "";
+$dbname = "localhost";
 $dbpass = "";
+$dbuser = "root";
+$db = "";
 
 
-$conn = mysqli_connect("localhost", "root" ,"", "mydb");
+$conn = mysqli_connect($dbname, $user, $dbpass, $db);
+
+var_dump($conn);
